@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+<html>
+    <head>
+        <title>Calculater</title>
+        <meta charset="UTF-8"/>
+        <link rel='stylesheet' href='style2.css'/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <input type="number" id="text" placeholder="Enter the First Number"/><br/>
+        <input type="number" id="text1" placeholder="Enter the Second Number"/><br/>
+        <button onclick="multiply()"><i class="fas fa-times"></i></button>
+        <button onclick="addition()"><i class="fas fa-plus"></i></button>
+        <button onclick="divition()"><i class="fas fa-divide"></i></button>
+        <button onclick="subtraction()"><i class="fas fa-minus"></i></button>
+        <p id="write"></p>
+        <!----------------------------------------------------------------------->
+        <div class="calculas">
+            <form action="" class="formclass" name="formclass">
+                    <input type="text" class="answer" name="answer" placeholder="0" disabled><br>
+
+                    <input type="button" value=" sin " onclick="fnsin()">
+                    <input type="button" value=" cos " onclick="fncos()">
+                    <input type="button" value=" tan " onclick="fntan()">
+                    <input type="button" value=" Del " onclick="backspace()">
+                    <br>
+                    <input type="button" value=" √ " onclick="sqrt()">
+                    <input type="button" value=" x^2 " onclick="square()">
+                    <input type="button" value=" ( " onclick="formclass.answer.value+='('">
+                    <input type="button" value=" ) " onclick="formclass.answer.value+=')'">
+                    <br>
+                    <input type="button" value=" π " onclick="formclass.answer.value='3.14'">
+                    <input type="button" value=" % " onclick="formclass.answer.value+='%'">
+                    <input type="button" value=" Ac " onclick="formclass.answer.value= '' ">
+                    <input type="button" value=" ÷ " onclick="formclass.answer.value+='/'" class="color1">
+                    <br>
+                    <input type="button" value=" 1 " onclick="formclass.answer.value+='1'">
+                    <input type="button" value=" 2 " onclick="formclass.answer.value+='2'">
+                    <input type="button" value=" 3 " onclick="formclass.answer.value+='3'">
+                    <input type="button" value=" x " onclick="formclass.answer.value+='*'" class="color1">
+                    <br>
+                    <input type="button" value=" 4 " onclick="formclass.answer.value+='4'">
+                    <input type="button" value=" 5 " onclick="formclass.answer.value+='5'">
+                    <input type="button" value=" 6 " onclick="formclass.answer.value+='6'">
+                    <input type="button" value=" - " onclick="formclass.answer.value+='-'" class="color1">
+                    <br>
+                    <input type="button" value=" 7 " onclick="formclass.answer.value+='7'">
+                    <input type="button" value=" 8 " onclick="formclass.answer.value+='8'">
+                    <input type="button" value=" 9 " onclick="formclass.answer.value+='9'">
+                    <input type="button" value=" + " onclick="formclass.answer.value+='+'" class="color1">
+                    <br>
+                    <input type="button" value=" 0 " onclick="formclass.answer.value+='0'" class="zero">
+                    <input type="button" value=" . " onclick="formclass.answer.value+='.'">
+                    <input type="button" class="ahmed" value=" = " onclick="formclass.answer.value=eval(formclass.answer.value)">
+            </form>
+        </div>
+        <script src="script1.js"></script>
+    </body>
+ </html>   
