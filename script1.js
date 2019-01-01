@@ -52,9 +52,4 @@ function square()
 {
     formclass.answer.value=Math.pow(formclass.answer.value,2);
 }
-document.querySelectorAll('input[type=button]').forEach(function(e) {
-    e.addEventListener('click', function() {
-      this.style.backgroundColor = "#676713";
-      this.style.color="#000";
-    })
-  });
+

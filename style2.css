@@ -49,6 +49,11 @@ p
     margin: 3px;
     border: 0px;
 }
+.calculas input[type="button"]:hover
+{
+    background-color: #676713;
+    color: #000;
+}
 .calculas input[type="text"]
 {
     height: 115px;
@@ -63,6 +68,10 @@ input[type='button'].ahmed
 input[type='button'].color1
 {
     color: #a51717 !important;
+}
+input[type='button'].color1:hover
+{
+    background-color:darkgray;
 }
 input[type='button'].zero
 {
